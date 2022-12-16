@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish: hsl(218, 22%, 67%);
+--Karla : 'Karla', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    font-family: var(--Karla);
+    background-color: var(--Light-Gray)
+}
+.container {
+    max-width: 660px;
+    margin: 0 auto; 
+}
+.wrapper {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a""b c";
+    border-radius: 7px;
+    overflow: hidden; 
+}
+.columna1 {
+    grid-area: a;
+    padding: 40px;
+}
+.columna2 {
+    padding: 40px;
+    grid-area: b;
+    background-color: var(--Cyan);
+    color: rgba(255, 255, 255, 0.753);
+}
+.columna3 {
+    padding: 40px;
+    grid-area: c;
+    background-color: hsl(179, 52%, 53%);
+    color: white;
+}
+button {
+    background-color: var(--Bright-Yellow);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.9rem;
+    font-weight: 700;
+    width: 15rem;
+    margin-top: 2rem;
+    display: grid;
+    box-shadow: 5px 5px 8px #1b1919;
+    transition: box-shadow 0.7s ease;
+
+}
+.columna1 h2 {
+    color: var(--Cyan);
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.columna1 h3 {
+    color: var(--Bright-Yellow);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+.columna1 p {
+    color: var(--Grayish);
+    line-height: 1.5;
+}
+.columna2 h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.columna3 h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.columna3 p {
+    color: var(--Light-Gray);
+    text-align: left;
+    margin-right: 1rem;
+    padding-bottom: 4px;
+}
+h5 {
+    padding-bottom: 10px;
+    font-size: 16px;
+    color:hsla(203, 44%, 93%, 0.61)
+}
+h5 span.price {
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+}
+span {
+    font-weight: 400;
+}
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    grid-template-columns: 100%;
+    grid-template-areas: "a""b""c";
+   }
+
+}
