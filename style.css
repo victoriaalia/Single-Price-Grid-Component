@@ -88,9 +88,10 @@ button {
 .columna3 ol {
     opacity: 0.5;
     list-style: none;
-    text-align: left;
-    margin-right: 1rem;
-    padding-bottom: 4px;
+    font-weigth: 700;
+    font-size: 13px;
+    margin-top: 1.2rem;
+    line-height: 1.2rem;
 }
 h5 {
     padding-bottom: 10px;
