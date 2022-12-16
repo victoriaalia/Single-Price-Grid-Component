@@ -85,8 +85,9 @@ button {
     font-size: 20px;
     font-weight: 700;
 }
-.columna3 p {
-    color: var(--Light-Gray);
+.columna3 ol {
+    opacity: 0.5;
+    list-style: none;
     text-align: left;
     margin-right: 1rem;
     padding-bottom: 4px;
